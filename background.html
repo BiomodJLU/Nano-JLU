@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Background</title>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="Tooplate">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+<!-- Custom Theme files -->
+<link href="css/theme-style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+</script>
+<!----font-Awesome----->
+<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+<!----font-Awesome----->
+<!----webfonts---->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body,td,th {
+	font-family: "Open Sans", sans-serif;
+}
+a:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a:hover {
+	color: #CCCCCC;
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+<!----//webfonts---->
+<!----start-top-nav-script---->
+		<script>
+			$(function() {
+				var pull 		= $('#pull');
+					menu 		= $('nav ul');
+					menuHeight	= menu.height();
+				$(pull).on('click', function(e) {
+					e.preventDefault();
+					menu.slideToggle();
+				});
+				$(window).resize(function(){
+	        		var w = $(window).width();
+	        		if(w > 320 && menu.is(':hidden')) {
+	        			menu.removeAttr('style');
+	        		}
+	    		});
+			});
+		</script>
+		<!----//End-top-nav-script---->
+        <meta charset="utf-8">
+<!-- Main css -->
+<link rel="stylesheet" href="css/tooplate-style.css">
+
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+<!----start-header---->
+			 <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                 <div align="center">
+                   <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                     <span class="icon icon-bar"></span>
+                     <span class="icon icon-bar"></span>
+                     <span class="icon icon-bar"></span>
+                   </button>
+                   <!---- start-logo---->
+                 </div>
+                 <div class="logo"></div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                   <!---- //End-logo---->
+                   <!----start-top-nav---->
+                   <nav class="top-nav">
+                   <ul class="top-nav">
+                   <img src="images/Cache_73594b8a94c96629..jpg" alt="logo" width="83" height="78" align="left">
+                     <li class="active"><a href="Home.html">Home</a></li>
+                     <li><a href="background.html">Background</a></li>
+                     <li><a href="">Design</a></li>
+                     <li><a href="">Goals</a></li>
+                     <li><a href="" class=>Experiment</a></li>
+                     <li><a href="">Result</a></li>
+                     <li><a href="">Team</a></li>
+                     <li class="contatct-active" class="page-scroll">
+                     <a href="#contact" class="scroll">Contact</a>
+                     </li>
+                   </ul>
+                   <a href="#" id="pull"><img src="images/nav-icon.png" title="menu" /></a>
+                 </div>
+                 </div>
+               </div>
+     </section>  
+<!-- ABOUT SECTION -->
+<section id="about" class="parallax-section">
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-4 col-sm-8">
+                    <img src="images/background.png" class="wow fadeInUp img-responsive" data-wow-delay="0.2s" alt="about image">
+                    <div class="wow fadeInUp" data-wow-delay="0.4s">
+                      <h3>前人的工作总结</h3>
+                         <h3>我们自己的工作介绍                    </h3>
+                    </div>
+               </div>
+
+               <div class="col-md-8 col-sm-12">
+                    <div class="about-thumb">
+                         <div class="wow fadeInUp section-title" data-wow-delay="0.6s">
+                              <p>前人工作总结内容</p>
+                              
+                         </div>
+                         <div class="wow fadeInUp" data-wow-delay="0.8s">
+                              <p>我们自己的工作介绍内容</p>
+                         </div>
+                    </div>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+
+</body>
+</html>
